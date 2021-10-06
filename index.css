@@ -1,0 +1,299 @@
+body {
+    background-image: url('images/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+
+h1 {
+    align-items: center;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+a {
+    color: antiquewhite;
+    display: inline;
+    padding: 18px;
+    margin: 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#about {
+    display: none;
+}
+
+#education {
+    display: none;
+}
+
+#projects {
+    display: none;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    height: auto;
+    background: #263238;
+    text-align: center;
+    color: #f4f4f4;
+    /* padding: -5px 0px -5px 0px; */
+}
+
+.navbar {
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.navbar a {
+    color: antiquewhite;
+    text-align: center;
+    padding: 16px 18px;
+}
+
+.navbar a:hover {
+    background-color: whitesmoke;
+    opacity: 0.85;
+    color: black;
+}
+
+#home .card {
+    /* padding: 30px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 500px; */
+    flex: 1;
+    flex-wrap: wrap;
+    list-style: none;
+    overflow: hidden;
+    box-shadow: 0 0px 0px -14px rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(238, 238, 238, 0.2);
+}
+
+#home .card-body {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: whitesmoke;
+    opacity: 0.88;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    flex: 0.5;
+}
+
+#home .card-body:hover {
+    background-color: whitesmoke;
+    opacity: 0.92;
+}
+
+#home .card-body p {
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.btn {
+    color: #3f80e2;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 3px solid rgba(10, 37, 153, 0.2);
+    background: transparent;
+}
+
+.btn:hover {
+    background-color: rgba(40, 84, 230, 0.12);
+}
+
+/* -----------------------   Education   ----------------------- */
+
+#about .card {
+    /* padding: 30px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 500px; */
+    flex: 1;
+    flex-wrap: wrap;
+    list-style: none;
+    overflow: hidden;
+    box-shadow: 0 0px 0px -14px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(238, 238, 238, 0.2);
+}
+
+#about .card-body {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: whitesmoke;
+    opacity: 0.86;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    flex: 0.5;
+}
+
+#about .card-body p {
+    text-align: left;
+}
+
+/* -----------------------   Education   ----------------------- */
+
+#education {
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#education-table table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: whitesmoke;
+    opacity: 0.86;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid;
+    border-color: black;
+}
+
+#education-table table th, #education-table table td {
+    border: 1px solid;
+    border-color: grey;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+#education-table table td img {
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
+}
+
+/* -----------------------   Projects & Internships   ----------------------- */
+
+#projects h1 {
+    align-items: center;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+#internships table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: whitesmoke;
+    opacity: 0.86;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid;
+    border-color: black;
+}
+
+#internships table th, #internships table td {
+    border: 1px solid;
+    border-color: grey;
+    padding: 10px;
+}
+
+#projects .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#projects .card {
+    background-color: whitesmoke;
+    opacity: 0.86;
+    border-radius: 5px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    word-wrap: break-word;
+    background-clip: border-box;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#projects .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(238, 238, 238, 0.2);
+    background-color: whitesmoke;
+    opacity: 1;
+}
+
+#projects .card h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: -0.5;
+    padding: 16px;
+    word-wrap: normal;
+}
+
+#projects .card p {
+    color: black;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 1.25px;
+    font-weight: 400;
+    padding: 16px;
+    word-wrap: normal;
+}
+
+#projects .card a {
+    color: black;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 1.25px;
+    font-weight: 400;
+    padding: 16px;
+    word-wrap: normal;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: transparent;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kushal Shah</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- CSS Library for Icons and Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="starter()">
+    <div class="navbar">
+        <a onclick="displayHome()">HOME</a>
+        <a onclick="displayAbout()">ABOUT</a>
+        <a onclick="displayEducation()">EDUCATION</a>
+        <a onclick="displayProjects()">PROJECTS & INTERNSHIPS</a>
+        <a href="resources/KushalShah_IIITH.pdf">CV</a>
+        <a href="https://www.linkedin.com/in/kushal-s/" class="fa fa-linkedin-square fa-lg"></a>
+        <a href="https://github.com/Kushal7788" class="fa fa-github-square fa-lg"></a>
+    </div>
+    <div id="home">
+        <div class="card">
+            <div class="card-body">
+                <img src="images/Pro-Pic med.jpg" alt="Avatar">
+                <h3>Kushal Shah</h3>
+                <p>Student | Coder</p>
+                <p>
+                    Pursuing M.Tech in CSIS from IIIT-H <br>
+                    I am a Passionate Coder &
+                    Machine Learning Enthusiastic. <br>
+                    My Expertise are in
+                    Web development and Machine Learning. <br>
+                    Click below To Know more about My Self
+                </p>
+                <button onclick="displayAbout()" class="btn card_btn">Know More</button>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <h1> Intro About Myself</h1>
+        <div class="card">
+            <div class="card-body">
+                <h3>Introduction</h3>
+                <p> Since childhood, I was always intrested in how the <br>
+                    computers work so I anted to become a Computer Engineer. <br>
+                    Recently I completed my B.Tech program and I am now enrolled <br>
+                    in a M.Tech Program at IIIT-Hyderabad. I very excited to start<br>
+                    this new chapter of my life.<br>
+                </p>
+                <h3> Skills </h3>
+                <p><b>Programming Languages :</b> C++, C, Python <br>
+                    <b>Primary Skills :</b> Data Structures, Algorithms, Django, SQL, Machine Learning<br>
+                    <b>Libraries and Tools :</b> Pandas, Matplotlib, Scikit-learn, GitHub.<br>
+                </p>
+                <h3>Extra Curricular</h3>
+                <ul>
+                    <li>Qualified GATE 2021. 97.98 percentile</li>
+                    <li>Conducted Webinars on Basics of Python</li>
+                    <li>Conducted 6 Workshops under Machine Learning and IoT Forum</li>
+                    <li>Technical head at IoT Forum, VIIT and Co-Founder of Machine Learning Forum Committee, VIIT</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="education">
+        <h1>Education</h1>
+        <div id="education-table">
+            <table id="edutable">
+                <thead>
+                    <tr>
+                        <th>College</th>
+                        <th>Duration</th>
+                        <th>CGPA</th>
+                        <th>Qualification</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="images/iiith.jpeg" alt="College Image"> <br>
+                            IIIT - Hyderabad
+                        </td>
+                        <td>Aug 2021 - Current</td>
+                        <td>---</td>
+                        <td>M.Tech CSIS</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/viit.png" alt="College Image">
+                            <br>
+                            VIIT - Pune
+                        </td>
+                        <td>July 2017 - June 2021</td>
+                        <td>9.84</td>
+                        <td>B.Tech Computer Engineering</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- <img src="images/iiith.jpeg" alt="College Image"> -->
+                            Class XII
+                        </td>
+                        <td>June 2015 - June 2017</td>
+                        <td>80.9%</td>
+                        <td>PCM HSC Board</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="projects">
+        <div id="internships">
+            <h1>Internships</h1>
+            <table id="internship">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Position</th>
+                        <th>Date</th>
+                        <th>Responsibilities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan=3>Snowflake</td>
+                        <td rowspan=3>Software Engineering Intern</td>
+                        <td rowspan=3>Jan 2021 - June 2021</td>
+                        <td>Developed an automation tool with Django and VueJs frameworks</td>
+                    </tr>
+                    <tr>
+                        <td>Dockerized the web application and deployed on AWS ECS-Fargate</td>
+                    </tr>
+                    <tr>
+                        <td>Built analytics dashboards from data warehouses using internal tools and SnowSQL</td>
+                    </tr>
+                    <tr>
+                        <td rowspan=2>Integrated Decisions and Systems</td>
+                        <td rowspan=2>Software Engineering Intern</td>
+                        <td rowspan=2>Aug 2020 – Dec 2020</td>
+                        <td>Developed a data analytics web application with Spring Boot and Angular frameworks</td>
+                    </tr>
+                    <tr>
+                        <td>Designed automated test cases and optimized the performance of the web application</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="project-list">
+            <h1>Projects</h1>
+            <div class="cards">
+                <div class="card">
+                    <h3>Machine Learning Optimizers Comparison in <br> Jupyter Notebook and Survey Research Paper</h3>
+                    <p>Researched different optimizer techniques that are <br>
+                        compared on a test dataset to find the most <br>
+                        effective optimizer to train the neural networks. <br>
+                        Technology stack used :- Machine Learning, Deep Learning, <br>
+                        Numpy, Pandas, Matplotlib, Seaborn<br>
+                        Described the findings in form of Survey Paper<br>
+                    </p>
+                    <a href="https://github.com/Kushal7788/Optimizer-ML-Project" class="btn card_btn">Know
+                        More</a>
+                </div>
+                <div class="card">
+                    <h3>College Fest Web App in Django</h3>
+                    <p>Developed a web app using Django with SQLite as DataBase. <br>
+                        Architected for the purpose of online registration <br>
+                        for fest events.<br>
+                        Technology stack used :- Django, Rest APIs, Google OAuth, <br>
+                        Bootstrap, Jquery <br>
+                    </p>
+                    <a href="https://github.com/Kushal7788/GandharvaWeb/tree/dev" class="btn card_btn">Know
+                        More</a>
+                </div>
+                <div class="card">
+                    <h3>RF Controlled Holonomic drive</h3>
+                    <p>Designed the Holonomic drive using the Gyroscope sensors, <br>
+                        PID controller, and Arduino for the purpose of national <br>
+                        robotics competition. It was controlled with the RF module. <br>
+                        Technology stack used :- Arduino, PID, Embedded Electronics, <br>
+                        Android Development<br>
+                    </p>
+                    <a href="https://github.com/BOTwot/MR1-Traversal/tree/master/Failsafe" class="btn card_btn">Know
+                        More</a>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    <div id="footer">
+        <a>Email: kushal.shah@students.iiit.ac.in</a>
+        <a id="dateTime"></a>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

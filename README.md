@@ -169,6 +169,10 @@ Because the links use `href="#"`, the browser stays on the same document and the
 - Some page content (for example the M.Tech status and CGPA placeholder) reflects the time the site was last updated in 2021.
 - Possible improvements: responsive layout, hash-based routing, accessible navigation (buttons instead of `href="#"` links, `aria` attributes), and moving content into a JSON file or Jekyll data file.
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
 ## Author
 
 Kushal Shah - [github.com/Kushal7788](https://github.com/Kushal7788)

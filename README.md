@@ -11,7 +11,7 @@ A lightweight, dependency-free personal portfolio site (HTML, CSS and vanilla Ja
 
 ## Overview
 
-The site is a single HTML page that behaves like a small multi-tab application. A navigation bar switches between four content sections (Home, About, Education, Projects & Internships) without reloading the page, links out to a PDF CV, LinkedIn and GitHub, and shows a live clock in a fixed footer.
+The site is a single HTML page that behaves like a small multi-tab application. A navigation bar switches between four content sections (Home, About, Education, Projects & Internships) without reloading the page, links out to LinkedIn and GitHub, and shows a live clock in a fixed footer.
 
 There is no framework, no build step and no package manager: the files in this repository are exactly the files the browser downloads.
 
@@ -22,7 +22,6 @@ There is no framework, no build step and no package manager: the files in this r
 - **About** - introduction, skills and extra-curricular highlights.
 - **Education** - table of degrees with institution logos, dates and grades.
 - **Projects & Internships** - an internships table plus project cards linking to the corresponding GitHub repositories.
-- **CV download** - the navbar links directly to `resources/KushalShah_IIITH.pdf`.
 - **Live clock** - the footer shows the current local date and time, refreshed roughly once a second.
 - **Social links** - LinkedIn and GitHub icons from Font Awesome 4.7 (loaded from the cdnjs CDN).
 
@@ -35,7 +34,6 @@ flowchart LR
     HTML --> CSS["index.css"]
     HTML --> JS["index.js"]
     HTML --> IMG["images/ (photo, logos, background)"]
-    HTML --> PDF["resources/KushalShah_IIITH.pdf"]
     HTML --> FA["Font Awesome 4.7 CSS (cdnjs)"]
     CSS --> BG["images/back.jpg"]
 ```
@@ -50,7 +48,6 @@ flowchart LR
 | Styling | Plain CSS (Flexbox, fixed footer, hover effects) |
 | Behaviour | Vanilla JavaScript (DOM `style.display` toggling, `setInterval`) |
 | Icons | Font Awesome 4.7.0 via cdnjs |
-| CV | PDF (typeset separately with LaTeX `moderncv`; only the PDF is in this repo) |
 | Hosting | GitHub Pages, classic "deploy from branch" build from `master` / root |
 
 ## Project structure
@@ -65,8 +62,6 @@ flowchart LR
 │   ├── back.jpg               # Page background, referenced from index.css
 │   ├── iiith.jpeg             # IIIT Hyderabad logo (Education table)
 │   └── viit.png               # VIIT Pune logo (Education table)
-├── resources/
-│   └── KushalShah_IIITH.pdf   # CV linked from the navbar
 ├── docs/
 │   └── ARCHITECTURE.md        # Page/asset structure and deployment flow
 ├── .gitignore
@@ -97,7 +92,6 @@ There is nothing to install, configure or build.
 ## Usage
 
 - Click **HOME**, **ABOUT**, **EDUCATION** or **PROJECTS & INTERNSHIPS** in the navbar to switch sections.
-- Click **CV** to open the PDF resume.
 - Use the LinkedIn and GitHub icons to visit those profiles.
 - On each project card, **Know More** opens the project's GitHub repository.
 
@@ -122,8 +116,6 @@ Cards wrap automatically (`#projects .cards` is a wrapping flex container), so n
 **Add an internship** - add a `<tr>` to `<table id="internship">`. For multiple bullet points under one role, set `rowspan` on the Company, Position and Date cells to the number of rows, as the existing entries do.
 
 **Add an education entry** - add a `<tr>` to `<table id="edutable">`. Logos go in `images/` and are rendered at 200 x 200 px.
-
-**Replace the CV** - overwrite `resources/KushalShah_IIITH.pdf`, or add a new file and update the `CV` link in the navbar.
 
 **Add a new section** - this touches all three files:
 

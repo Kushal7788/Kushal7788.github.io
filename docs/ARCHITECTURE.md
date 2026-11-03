@@ -18,9 +18,6 @@ flowchart TD
             IIITH["iiith.jpeg"]
             VIIT["viit.png"]
         end
-        subgraph Resources["resources/"]
-            CV["KushalShah_IIITH.pdf"]
-        end
     end
     FA["Font Awesome 4.7.0 CSS (cdnjs.cloudflare.com)"]
     EXT["External links: LinkedIn, GitHub, project repos"]
@@ -31,14 +28,13 @@ flowchart TD
     HTML -->|"Home card img"| PRO
     HTML -->|"Education table img"| IIITH
     HTML -->|"Education table img"| VIIT
-    HTML -->|"navbar CV link"| CV
     HTML -->|"anchor href"| EXT
     CSS -->|"body background-image"| BACK
 ```
 
 *Figure 1 - Files that make up the site and how each one is referenced.*
 
-`index.html` is the only page and the single entry point. It pulls in two stylesheets (the local `index.css` and Font Awesome from a CDN, used only for the LinkedIn and GitHub icons) and one script, `index.js`, which is included after the closing `</body>` tag. Three of the four images are referenced directly by `<img>` tags in the HTML; the fourth, `back.jpg`, is referenced only from CSS as the page background. The CV PDF is not loaded with the page - it is fetched only when a visitor clicks the **CV** link. Every asset in the repository is referenced by the page; there are no orphaned files.
+`index.html` is the only page and the single entry point. It pulls in two stylesheets (the local `index.css` and Font Awesome from a CDN, used only for the LinkedIn and GitHub icons) and one script, `index.js`, which is included after the closing `</body>` tag. Three of the four images are referenced directly by `<img>` tags in the HTML; the fourth, `back.jpg`, is referenced only from CSS as the page background. Every asset in the repository is referenced by the page; there are no orphaned files.
 
 ### Document layout
 
@@ -53,7 +49,7 @@ flowchart TD
     Body --> Footer["div#footer (fixed, always visible)"]
 
     Nav --> NavLinks["HOME, ABOUT, EDUCATION, PROJECTS and INTERNSHIPS links"]
-    Nav --> NavExt["CV, LinkedIn, GitHub links"]
+    Nav --> NavExt["LinkedIn, GitHub links"]
     Home --> HomeCard["div.card: photo, headline, Know More button"]
     About --> AboutCard["div.card: Introduction, Skills, Extra Curricular"]
     Edu --> EduTable["table#edutable"]
@@ -152,7 +148,7 @@ flowchart LR
     Commit --> Push["git push origin master"]
     Push --> Trigger["GitHub Pages build triggered (source: master, root)"]
     Trigger --> Jekyll["Classic Jekyll build (no .nojekyll file)"]
-    Jekyll --> Copy["HTML, CSS, JS, images, PDF copied unchanged"]
+    Jekyll --> Copy["HTML, CSS, JS and images copied unchanged"]
     Jekyll --> Render["Markdown files rendered to HTML pages"]
     Copy --> Publish["Published to kushal7788.github.io (HTTPS enforced)"]
     Render --> Publish

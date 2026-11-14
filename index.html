@@ -1,194 +1,456 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Kushal Shah</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- CSS Library for Icons and Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kushal Shah · zkTLS &amp; Zero-Knowledge Engineer</title>
+  <meta name="description" content="Kushal Shah builds zkTLS and zero-knowledge systems that let people prove facts about their web data without handing that data over. Burnt Labs, previously Reclaim Protocol. M.Tech CS &amp; Information Security, IIIT Hyderabad.">
+  <meta name="author" content="Kushal Shah">
+  <link rel="canonical" href="https://kushal7788.github.io/">
+  <meta name="theme-color" content="#0a0c11">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kushal Shah · zkTLS &amp; Zero-Knowledge Engineer">
+  <meta property="og:description" content="Building privacy-preserving proofs of web data. Burnt Labs · previously Reclaim Protocol · IIIT Hyderabad.">
+  <meta property="og:url" content="https://kushal7788.github.io/">
+  <meta property="og:image" content="https://kushal7788.github.io/assets/img/kushal-shah.jpg">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 
-<body onload="starter()">
-    <div class="navbar">
-        <a href="#" onclick="displayHome()">HOME</a>
-        <a href="#" onclick="displayAbout()">ABOUT</a>
-        <a href="#" onclick="displayEducation()">EDUCATION</a>
-        <a href="#" onclick="displayProjects()">PROJECTS & INTERNSHIPS</a>
-        <a href="https://www.linkedin.com/in/kushal-s/" class="fa fa-linkedin-square fa-lg"></a>
-        <a href="https://github.com/Kushal7788" class="fa fa-github-square fa-lg"></a>
-    </div>
-    <div id="home">
-        <div class="card">
-            <div class="card-body">
-                <img src="images/Pro-Pic med.jpg" alt="Avatar">
-                <h3>Kushal Shah</h3>
-                <p>Student | Coder</p>
-                <p>
-                    Pursuing M.Tech in CSIS from IIIT-H <br>
-                    I am a Passionate Coder &
-                    Machine Learning Enthusiastic. <br>
-                    My Expertise are in
-                    Web development and Machine Learning. <br>
-                    Click below To Know more about My Self
-                </p>
-                <button onclick="displayAbout()" class="btn card_btn">Know More</button>
-            </div>
-        </div>
-    </div>
-    <div id="about">
-        <h1> Intro About Myself</h1>
-        <div class="card">
-            <div class="card-body">
-                <h3>Introduction</h3>
-                <p> Since childhood, I was always intrested in how the <br>
-                    computers work so I wanted to become a Computer Engineer. <br>
-                    Recently I completed my B.Tech program and I am now enrolled <br>
-                    in a M.Tech Program at IIIT-Hyderabad. I very excited to start<br>
-                    this new chapter of my life.<br>
-                </p>
-                <h3> Skills </h3>
-                <p><b>Programming Languages :</b> C++, C, Python <br>
-                    <b>Primary Skills :</b> Data Structures, Algorithms, Django, SQL, Machine Learning<br>
-                    <b>Libraries and Tools :</b> Pandas, Matplotlib, Scikit-learn, GitHub.<br>
-                </p>
-                <h3>Extra Curricular</h3>
-                <ul>
-                    <li>Qualified GATE 2021. 97.98 percentile</li>
-                    <li>Conducted Webinars on Basics of Python</li>
-                    <li>Conducted 6 Workshops under Machine Learning and IoT Forum</li>
-                    <li>Technical head at IoT Forum, VIIT and Co-Founder of Machine Learning Forum Committee, VIIT</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div id="education">
-        <h1>Education</h1>
-        <div id="education-table">
-            <table id="edutable">
-                <thead>
-                    <tr>
-                        <th>College</th>
-                        <th>Duration</th>
-                        <th>CGPA</th>
-                        <th>Qualification</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="images/iiith.jpeg" alt="College Image"> <br>
-                            IIIT - Hyderabad
-                        </td>
-                        <td>Aug 2021 - Current</td>
-                        <td>---</td>
-                        <td>M.Tech CSIS</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/viit.png" alt="College Image">
-                            <br>
-                            VIIT - Pune
-                        </td>
-                        <td>July 2017 - June 2021</td>
-                        <td>9.84</td>
-                        <td>B.Tech Computer Engineering</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- <img src="images/iiith.jpeg" alt="College Image"> -->
-                            Class XII
-                        </td>
-                        <td>June 2015 - June 2017</td>
-                        <td>80.9%</td>
-                        <td>PCM HSC Board</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div id="projects">
-        <div id="internships">
-            <h1>Internships</h1>
-            <table id="internship">
-                <thead>
-                    <tr>
-                        <th>Company</th>
-                        <th>Position</th>
-                        <th>Date</th>
-                        <th>Responsibilities</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td rowspan=3>Snowflake</td>
-                        <td rowspan=3>Software Engineering Intern</td>
-                        <td rowspan=3>Jan 2021 - June 2021</td>
-                        <td>Developed an automation tool with Django and VueJs frameworks</td>
-                    </tr>
-                    <tr>
-                        <td>Dockerized the web application and deployed on AWS ECS-Fargate</td>
-                    </tr>
-                    <tr>
-                        <td>Built analytics dashboards from data warehouses using internal tools and SnowSQL</td>
-                    </tr>
-                    <tr>
-                        <td rowspan=2>Integrated Decisions and Systems</td>
-                        <td rowspan=2>Software Engineering Intern</td>
-                        <td rowspan=2>Aug 2020 – Dec 2020</td>
-                        <td>Developed a data analytics web application with Spring Boot and Angular frameworks</td>
-                    </tr>
-                    <tr>
-                        <td>Designed automated test cases and optimized the performance of the web application</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div id="project-list">
-            <h1>Projects</h1>
-            <div class="cards">
-                <div class="card">
-                    <h3>Machine Learning Optimizers Comparison in <br> Jupyter Notebook and Survey Research Paper</h3>
-                    <p>Researched different optimizer techniques that are <br>
-                        compared on a test dataset to find the most <br>
-                        effective optimizer to train the neural networks. <br>
-                        Technology stack used :- Machine Learning, Deep Learning, <br>
-                        Numpy, Pandas, Matplotlib, Seaborn<br>
-                        Described the findings in form of Survey Paper<br>
-                    </p>
-                    <a href="https://github.com/Kushal7788/Optimizer-ML-Project" class="btn card_btn">Know
-                        More</a>
-                </div>
-                <div class="card">
-                    <h3>College Fest Web App in Django</h3>
-                    <p>Developed a web app using Django with SQLite as DataBase. <br>
-                        Architected for the purpose of online registration <br>
-                        for fest events.<br>
-                        Technology stack used :- Django, Rest APIs, Google OAuth, <br>
-                        Bootstrap, Jquery <br>
-                    </p>
-                    <a href="https://github.com/Kushal7788/GandharvaWeb/tree/dev" class="btn card_btn">Know
-                        More</a>
-                </div>
-                <div class="card">
-                    <h3>RF Controlled Holonomic drive</h3>
-                    <p>Designed the Holonomic drive using the Gyroscope sensors, <br>
-                        PID controller, and Arduino for the purpose of national <br>
-                        robotics competition. It was controlled with the RF module. <br>
-                        Technology stack used :- Arduino, PID, Embedded Electronics, <br>
-                        Android Development<br>
-                    </p>
-                    <a href="https://github.com/BOTwot/MR1-Traversal/tree/master/Failsafe" class="btn card_btn">Know
-                        More</a>
-                </div>
-            </div>
-            <br>
-        </div>
-    </div>
-    <div id="footer">
-        <a>Email: kushal.shah@students.iiit.ac.in</a>
-        <a id="dateTime"></a>
-    </div>
-</body>
-<script src="index.js"></script>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Kushal Shah, back to top">
+        <span class="brand-mark">KS</span>
+        <span class="brand-name">Kushal Shah</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" type="button" aria-label="Toggle colour theme">
+            <i class="fa-solid fa-moon icon-dark" aria-hidden="true"></i>
+            <i class="fa-solid fa-sun icon-light" aria-hidden="true"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero-text reveal">
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>Building at <a href="https://github.com/burnt-labs">Burnt Labs</a></p>
+        <h1>Hi, I'm Kushal.<br><span class="gradient-text">I build zkTLS &amp; zero-knowledge systems.</span></h1>
+        <p class="lead">
+          I build infrastructure that lets people <strong>prove facts about their web data</strong>, such as accounts,
+          history and credentials, without handing that data over. That work spans MPC-TLS and TEE-backed verification,
+          mobile SDKs, Circom circuits and developer tooling.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">See my work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/kushal-s/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+          <a class="btn btn-ghost" href="https://t.me/KushalS7788" target="_blank" rel="noopener"><i class="fa-brands fa-telegram" aria-hidden="true"></i> Telegram</a>
+          <a class="btn btn-icon" href="https://github.com/Kushal7788" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+        </div>
+        <ul class="hero-meta" aria-label="Highlights">
+          <li><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Burnt Labs · previously Reclaim Protocol</li>
+          <li><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> M.Tech CS &amp; InfoSec, IIIT Hyderabad</li>
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> India</li>
+        </ul>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="photo-ring">
+          <img src="assets/img/kushal-shah.jpg" width="560" height="560" alt="Portrait of Kushal Shah">
+        </div>
+        <div class="code-chip" aria-hidden="true">
+          <span class="c-key">prove</span>(<span class="c-str">"web data"</span>) <span class="c-op">→</span> <span class="c-key">reveal</span>(<span class="c-str">"only what's needed"</span>)
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container">
+      <div class="section-head reveal">
+        <p class="kicker">01 · About</p>
+        <h2>Privacy-preserving proofs, from protocol to product</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            I'm a software engineer focused on <strong>zkTLS</strong>, the family of techniques (MPC-TLS, proxy
+            witnesses and TEEs) that turns an ordinary HTTPS session into a verifiable proof. Today I build zkTLS
+            solutions at <strong>Burnt Labs</strong>. Before that I worked with <strong>Reclaim Protocol</strong>,
+            where I built the SDKs and developer tools that cut integration time from hours to minutes.
+          </p>
+          <p>
+            I like working across the whole stack: protocol research and Rust verifiers, mobile SDKs, and
+            the developer experience that makes all of it usable. My M.Tech at IIIT Hyderabad was in Computer
+            Science &amp; Information Security, and I have shipped work in NLP, information retrieval and
+            database internals.
+          </p>
+        </div>
+        <ul class="stat-grid reveal" aria-label="At a glance">
+          <li class="stat"><span class="stat-num">4–5h → 15m</span><span class="stat-label">Reclaim SDK integration time</span></li>
+          <li class="stat"><span class="stat-num">4</span><span class="stat-label">SDK platforms shipped: JS, React Native, Flutter, Python</span></li>
+          <li class="stat"><span class="stat-num">98th</span><span class="stat-label">percentile, GATE 2021</span></li>
+          <li class="stat"><span class="stat-num">2×</span><span class="stat-label">ETHGlobal hackathons</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section container">
+      <div class="section-head reveal">
+        <p class="kicker">02 · Experience</p>
+        <h2>Where I've worked</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="t-item reveal">
+          <div class="t-meta">
+            <span class="t-date">Present</span>
+          </div>
+          <article class="t-card">
+            <header>
+              <h3>Burnt Labs</h3>
+              <p class="t-role">zkTLS solutions</p>
+            </header>
+            <ul>
+              <li>Build zkTLS solutions that let users prove facts from web accounts while keeping their raw data private.</li>
+              <li>Work across mobile SDKs, device attestation, TEE-backed verification and the provider tooling that defines what can be proved.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies"><li>zkTLS</li><li>TEEs</li><li>React Native</li><li>TypeScript</li><li>Rust</li></ul>
+          </article>
+        </li>
+
+        <li class="t-item reveal">
+          <div class="t-meta">
+            <span class="t-date">From Jun 2023</span>
+          </div>
+          <article class="t-card">
+            <header>
+              <h3><a href="https://www.reclaimprotocol.org/" target="_blank" rel="noopener">Reclaim Protocol</a></h3>
+              <p class="t-role">Software Engineer · Remote</p>
+            </header>
+            <ul>
+              <li>Built Reclaim's SDKs for <strong>JavaScript, React Native, Flutter and Python</strong>, with CI/CD for automated publishing. This cut integration time from 4–5 hours to about <strong>15 minutes</strong>.</li>
+              <li>Designed the developer tool for defining custom data providers: request-matching rules and structured extraction from network responses, usable without deep protocol knowledge.</li>
+              <li>Built centralised logging and analytics on <strong>ClickHouse and Grafana</strong>, so issues could be found in a single session and billing was more accurate.</li>
+              <li>Built an AI verification agent and MCP server, compatible with Google's A2A protocol, for employment and academic checks.</li>
+              <li>Integrated Reclaim as a credential issuer in MOSIP's <a href="https://github.com/Kushal7788/reclaim-demos/tree/main/mosip-contributions/inji-wallet-reclaim-issuer">Inji Wallet</a>, turning zkTLS proofs into verifiable credentials.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies"><li>zkTLS</li><li>Node.js</li><li>React</li><li>React Native</li><li>Flutter</li><li>MongoDB</li><li>ClickHouse</li><li>AWS</li></ul>
+          </article>
+        </li>
+
+        <li class="t-item reveal">
+          <div class="t-meta">
+            <span class="t-date">May – Jul 2022</span>
+          </div>
+          <article class="t-card">
+            <header>
+              <h3>Indeed</h3>
+              <p class="t-role">Data Science Intern · Hyderabad</p>
+            </header>
+            <ul>
+              <li>Built a spell checker for job-seeker resumes that combines heuristic and statistical error detection with <strong>NER</strong> to separate named entities from typos. It found <strong>25% more</strong> spelling errors than existing tools.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies"><li>Python</li><li>NLP</li><li>NER</li><li>SQL</li></ul>
+          </article>
+        </li>
+
+        <li class="t-item reveal">
+          <div class="t-meta">
+            <span class="t-date">Jan – Jun 2021</span>
+          </div>
+          <article class="t-card">
+            <header>
+              <h3>Snowflake</h3>
+              <p class="t-role">Software Engineer Intern · Pune</p>
+            </header>
+            <ul>
+              <li>Built automated analytics dashboards on the data warehouse, replacing manual monitoring with real-time alerts.</li>
+              <li>Built a web tool for bulk PDF watermarking (Django), containerised it and deployed it on AWS ECS Fargate.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies"><li>Python</li><li>Django</li><li>SQL</li><li>Docker</li><li>AWS</li></ul>
+          </article>
+        </li>
+
+        <li class="t-item reveal">
+          <div class="t-meta">
+            <span class="t-date">Jul – Dec 2020</span>
+          </div>
+          <article class="t-card">
+            <header>
+              <h3>IDeaS Revenue Solutions</h3>
+              <p class="t-role">Software Engineer Intern · Pune</p>
+            </header>
+            <ul>
+              <li>Built revenue-management features for hotels and resorts, including reservation booking and real-time visibility of upcoming reservations, with over <strong>80% test coverage</strong>.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies"><li>Java</li><li>Spring Boot</li><li>Angular</li><li>SQL</li></ul>
+          </article>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container">
+      <div class="section-head reveal">
+        <p class="kicker">03 · Projects</p>
+        <h2>Selected work</h2>
+        <p class="section-sub">Open-source projects from my <a href="https://github.com/Kushal7788" target="_blank" rel="noopener">GitHub</a>, ordered by focus area.</p>
+      </div>
+
+      <div class="filters reveal" role="group" aria-label="Filter projects">
+        <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-filter="zk" aria-pressed="false">ZK &amp; zkTLS</button>
+        <button class="chip" type="button" data-filter="ml" aria-pressed="false">ML, NLP &amp; IR</button>
+        <button class="chip" type="button" data-filter="systems" aria-pressed="false">Systems</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="p-card featured reveal" data-tags="zk">
+          <div class="p-top"><span class="p-cat">ZK · zkTLS</span><span class="p-badge">Featured</span></div>
+          <h3>zk-backpack</h3>
+          <p>A Flutter vault for TLSNotary web proofs, with selective disclosure, revocable share links and proof verification.</p>
+          <ul class="tags"><li>Flutter</li><li>Dart</li><li>TLSNotary</li><li>Node.js</li></ul>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/Kushal7788/zk-backpack" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="p-card featured reveal" data-tags="zk">
+          <div class="p-top"><span class="p-cat">ZK · zkTLS</span><span class="p-badge">Featured</span></div>
+          <h3>plugin-service</h3>
+          <p>A TLSNotary MPC-TLS verifier and notary service in Rust (axum) for mobile provers, deployable on Cloudflare.</p>
+          <ul class="tags"><li>Rust</li><li>axum</li><li>MPC-TLS</li><li>Cloudflare</li></ul>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/Kushal7788/plugin-service" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-tags="zk ml">
+          <div class="p-top"><span class="p-cat">ZK · zkTLS</span></div>
+          <h3>Vibe-Match</h3>
+          <p>Prove your Netflix or Prime watch history with zkTLS, then match with friends on taste using OpenAI embeddings and cosine similarity.</p>
+          <ul class="tags"><li>React</li><li>Express</li><li>MongoDB</li><li>Reclaim</li></ul>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/Kushal7788/Vibe-Match-Client" target="_blank" rel="noopener">Client <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            <a class="p-link" href="https://github.com/Kushal7788/Vibe-Match-Service" target="_blank" rel="noopener">Service <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-tags="zk">
+          <div class="p-top"><span class="p-cat">ZK · Circuits</span></div>
+          <h3>zk-circuits-playground</h3>
+          <p>Circom circuits I write, prove and test with snarkjs (Groth16), starting with a private email-domain verifier.</p>
+          <ul class="tags"><li>Circom</li><li>snarkjs</li><li>Groth16</li></ul>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/Kushal7788/zk-circuits-playground" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-tags="zk">
+          <div class="p-top"><span class="p-cat">ZK · Reclaim</span></div>
+          <h3>reclaim-demos</h3>
+          <p>A Reclaim issuer for MOSIP's Inji Wallet, a minimal SDK backend, and demo apps including proof-gated Discord and Telegram bots, KYC-free lending and employment verification.</p>
+          <ul class="tags"><li>React Native</li><li>Node.js</li><li>Kotlin</li><li>Reclaim</li></ul>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/Kushal7788/reclaim-demos" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-tags="ml systems">
+          <div class="p-top"><span class="p-cat">IR · Search</span></div>
+          <h3>Wikipedia Search Engine</h3>
+          <p>A field-aware inverted index with TF-IDF ranking over the full ~90 GB English Wikipedia dump, returning the top matches instantly.</p>
+          <ul class="tags"><li>Python</li><li>NLTK</li><li>Indexing</li><li>TF-IDF</li></ul>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/Kushal7788/Wikipedia_Search_Engine" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-tags="ml">
+          <div class="p-top"><span class="p-cat">ML · NLP</span></div>
+          <h3>Hinglish Code-Mixed Generation</h3>
+          <p>Language models for Hindi–English code-mixed text: LSTM and BiLSTM next-word models, a Hinglish sentence encoder and a fine-tuned BERT masked LM.</p>
+          <ul class="tags"><li>TensorFlow</li><li>BERT</li><li>LSTM</li><li>ROUGE-L</li></ul>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/Kushal7788/CodeMix_Generation" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-tags="ml">
+          <div class="p-top"><span class="p-cat">ML · Vision</span></div>
+          <h3>Dimensionality Reduction</h3>
+          <p>PCA from first principles (eigenfaces, explained variance, reconstruction) and three PyTorch autoencoder architectures.</p>
+          <ul class="tags"><li>PyTorch</li><li>NumPy</li><li>PCA</li><li>Autoencoders</li></ul>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/Kushal7788/Dimensionality_Reduction_Techniques" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-tags="ml">
+          <div class="p-top"><span class="p-cat">ML · Optimisation</span></div>
+          <h3>Gradient Descent Optimizers</h3>
+          <p>Eight optimizers, from SGD to Adam, implemented from scratch in NumPy and compared visually, with an accompanying survey paper.</p>
+          <ul class="tags"><li>NumPy</li><li>From scratch</li><li>Research</li></ul>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/Kushal7788/Optimizer-ML-Project" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-tags="ml systems">
+          <div class="p-top"><span class="p-cat">LLM · Infra</span></div>
+          <h3>llm-deploy</h3>
+          <p>A self-hosted chat API for a 70B open-weights LLM: FastAPI and Ollama behind nginx, with API-key auth, rate limiting and one-shot GPU provisioning.</p>
+          <ul class="tags"><li>FastAPI</li><li>Ollama</li><li>nginx</li><li>Docker</li></ul>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/Kushal7788/llm-deploy" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-tags="systems">
+          <div class="p-top"><span class="p-cat">Systems · Databases</span></div>
+          <h3>SQL Database Engine</h3>
+          <p>A disk-backed relational query engine in C++ with paged storage, a buffer pool, nested-loop and hash joins, and GROUP BY.</p>
+          <ul class="tags"><li>C++</li><li>DBMS</li><li>Query engine</li></ul>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/Kushal7788/SQL_Database_Engine" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="p-card reveal" data-tags="systems">
+          <div class="p-top"><span class="p-cat">Systems · Networking</span></div>
+          <h3>P2P File Sharing</h3>
+          <p>Group-based peer-to-peer file sharing in C++ with a central tracker, TCP sockets, pthreads and SHA-1 piece hashing.</p>
+          <ul class="tags"><li>C++</li><li>Sockets</li><li>pthreads</li></ul>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/Kushal7788/P2P_File_Sharing_System" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section container">
+      <div class="section-head reveal">
+        <p class="kicker">04 · Skills</p>
+        <h2>Toolbox</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> ZK &amp; cryptography</h3>
+          <ul class="tags"><li>zkTLS</li><li>TLSNotary / MPC-TLS</li><li>TEEs</li><li>Circom</li><li>snarkjs · Groth16</li><li>Selective disclosure</li><li>Verifiable credentials</li></ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3><i class="fa-solid fa-code" aria-hidden="true"></i> Languages</h3>
+          <ul class="tags"><li>TypeScript</li><li>JavaScript</li><li>Rust</li><li>Python</li><li>Dart</li><li>C++</li><li>Java</li><li>SQL</li></ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3><i class="fa-solid fa-server" aria-hidden="true"></i> Backend &amp; infra</h3>
+          <ul class="tags"><li>Node.js</li><li>Express</li><li>axum</li><li>FastAPI</li><li>MongoDB</li><li>Redis</li><li>ClickHouse</li><li>Grafana</li><li>AWS</li><li>Cloudflare Workers</li><li>Docker</li><li>CI/CD</li></ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i> Frontend &amp; mobile</h3>
+          <ul class="tags"><li>React</li><li>React Native</li><li>Expo</li><li>Flutter</li></ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3><i class="fa-solid fa-brain" aria-hidden="true"></i> ML &amp; AI</h3>
+          <ul class="tags"><li>PyTorch</li><li>TensorFlow · Keras</li><li>scikit-learn</li><li>NLTK</li><li>Transformers</li><li>LLM serving</li><li>MCP · A2A agents</li></ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3><i class="fa-solid fa-trophy" aria-hidden="true"></i> Highlights</h3>
+          <ul class="plain">
+            <li>GATE 2021: 98th percentile</li>
+            <li>Two ETHGlobal hackathons</li>
+            <li>Deep Learning Specialization, DeepLearning.AI</li>
+            <li>Fundamentals of Computer Vision, NVIDIA DLI</li>
+            <li>Ran Python and ML workshops; co-founded the ML Forum at VIIT</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section container">
+      <div class="section-head reveal">
+        <p class="kicker">05 · Education</p>
+        <h2>Education</h2>
+      </div>
+      <div class="edu-grid">
+        <article class="edu-card reveal">
+          <img src="assets/img/iiith.jpeg" width="56" height="56" alt="IIIT Hyderabad logo" loading="lazy">
+          <div>
+            <h3>IIIT Hyderabad</h3>
+            <p>M.Tech, Computer Science &amp; Information Security</p>
+            <p class="muted">2021 – 2023 · CGPA 8.67</p>
+          </div>
+        </article>
+        <article class="edu-card reveal">
+          <img src="assets/img/viit.png" width="56" height="56" alt="VIIT Pune logo" loading="lazy">
+          <div>
+            <h3>VIIT Pune</h3>
+            <p>B.Tech, Computer Engineering</p>
+            <p class="muted">2017 – 2021 · CGPA 9.84</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+      <div class="contact-card reveal">
+        <p class="kicker">06 · Contact</p>
+        <h2>Let's build something verifiable.</h2>
+        <p class="lead">I'm happy to talk about zero knowledge, zkTLS, privacy engineering, or a role where these matter. The quickest way to reach me is LinkedIn or Telegram.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/kushal-s/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> Connect on LinkedIn</a>
+          <a class="btn btn-ghost" href="https://t.me/KushalS7788" target="_blank" rel="noopener"><i class="fa-brands fa-telegram" aria-hidden="true"></i> @KushalS7788 on Telegram</a>
+          <a class="btn btn-ghost" href="https://github.com/Kushal7788" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Kushal Shah</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/Kushal7788" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/kushal-s/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://t.me/KushalS7788" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
 </html>

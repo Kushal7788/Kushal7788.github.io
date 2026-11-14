@@ -61,6 +61,15 @@
   } else {
     reveals.forEach(function (el) { el.classList.add("is-visible"); });
   }
+  // Safety net: if the observer never fires (some embedded or headless renderers),
+  // reveal everything so no content stays hidden.
+  setTimeout(function () {
+    var stuck = Array.prototype.some.call(reveals, function (el) {
+      var r = el.getBoundingClientRect();
+      return !el.classList.contains("is-visible") && r.top < window.innerHeight && r.bottom > 0;
+    });
+    if (stuck) reveals.forEach(function (el) { el.classList.add("is-visible"); });
+  }, 1500);
 
   // ---- Highlight the nav link for the section in view ----
   var sections = ["about", "experience", "projects", "skills", "contact"]

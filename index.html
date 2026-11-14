@@ -3,18 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kushal Shah · zkTLS &amp; Zero-Knowledge Engineer</title>
-  <meta name="description" content="Kushal Shah builds zkTLS and zero-knowledge systems that let people prove facts about their web data without handing that data over. Burnt Labs, previously Reclaim Protocol. M.Tech CS &amp; Information Security, IIIT Hyderabad.">
+  <title>Kushal Shah · Cryptography &amp; Research Engineer (zkTLS, Zero-Knowledge)</title>
+  <meta name="description" content="Kushal Shah is a cryptography and research engineer building zkTLS and zero-knowledge systems: MPC-TLS, TEE-backed attestation, ZK circuits and privacy-preserving proofs of web data. Burnt Labs, previously Reclaim Protocol. M.Tech CS &amp; Information Security, IIIT Hyderabad.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="author" content="Kushal Shah">
   <link rel="canonical" href="https://kushal7788.github.io/">
   <meta name="theme-color" content="#0a0c11">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Kushal Shah · zkTLS &amp; Zero-Knowledge Engineer">
-  <meta property="og:description" content="Building privacy-preserving proofs of web data. Burnt Labs · previously Reclaim Protocol · IIIT Hyderabad.">
+  <meta property="og:site_name" content="Kushal Shah">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Kushal Shah · Cryptography &amp; Research Engineer">
+  <meta property="og:description" content="Cryptography &amp; research engineer building zkTLS and zero-knowledge systems. Burnt Labs · previously Reclaim Protocol · IIIT Hyderabad.">
   <meta property="og:url" content="https://kushal7788.github.io/">
-  <meta property="og:image" content="https://kushal7788.github.io/assets/img/kushal-shah.jpg">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://kushal7788.github.io/assets/img/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Kushal Shah, Cryptography &amp; Research Engineer: zkTLS and zero-knowledge systems">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kushal Shah · Cryptography &amp; Research Engineer">
+  <meta name="twitter:description" content="Building zkTLS and zero-knowledge systems: privacy-preserving proofs of web data.">
+  <meta name="twitter:image" content="https://kushal7788.github.io/assets/img/og-card.png">
+
+  <link rel="me" href="https://github.com/Kushal7788">
+  <link rel="me" href="https://www.linkedin.com/in/kushal-s/">
+  <link rel="me" href="https://t.me/KushalS7788">
+  <link rel="preload" as="image" href="assets/img/kushal-shah.jpg">
 
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +44,43 @@
         if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
       } catch (e) {}
     })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://kushal7788.github.io/#person",
+        "name": "Kushal Shah",
+        "url": "https://kushal7788.github.io/",
+        "image": "https://kushal7788.github.io/assets/img/kushal-shah.jpg",
+        "jobTitle": "Cryptography & Research Engineer",
+        "description": "Cryptography and research engineer building zkTLS and zero-knowledge systems.",
+        "worksFor": { "@type": "Organization", "name": "Burnt Labs", "url": "https://github.com/burnt-labs" },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "International Institute of Information Technology, Hyderabad" },
+          { "@type": "CollegeOrUniversity", "name": "Vishwakarma Institute of Information Technology, Pune" }
+        ],
+        "knowsAbout": ["Cryptography", "Applied cryptography", "zkTLS", "Zero-knowledge proofs", "MPC-TLS", "TLSNotary", "Trusted execution environments", "Remote attestation", "Circom", "zkSNARKs", "Verifiable credentials", "Privacy engineering", "Rust", "TypeScript", "React Native", "Machine learning"],
+        "sameAs": ["https://github.com/Kushal7788", "https://www.linkedin.com/in/kushal-s/", "https://t.me/KushalS7788"],
+        "address": { "@type": "PostalAddress", "addressCountry": "IN" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://kushal7788.github.io/#website",
+        "url": "https://kushal7788.github.io/",
+        "name": "Kushal Shah",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://kushal7788.github.io/#person" }
+      },
+      {
+        "@type": "ProfilePage",
+        "url": "https://kushal7788.github.io/",
+        "mainEntity": { "@id": "https://kushal7788.github.io/#person" }
+      }
+    ]
+  }
   </script>
 </head>
 
@@ -50,7 +101,7 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-cta" href="#contact">Let's talk</a></li>
         <li>
           <button class="theme-toggle" type="button" aria-label="Toggle colour theme">
             <i class="fa-solid fa-moon icon-dark" aria-hidden="true"></i>
@@ -65,28 +116,29 @@
     <!-- Hero -->
     <section class="hero container">
       <div class="hero-text">
-        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>Building at <a href="https://github.com/burnt-labs">Burnt Labs</a></p>
-        <h1>Hi, I'm Kushal.<br><span class="gradient-text">I build zkTLS &amp; zero-knowledge systems.</span></h1>
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>Cryptography &amp; Research Engineer</p>
+        <h1>Hi, I'm Kushal Shah.<br><span class="gradient-text">I build zkTLS &amp; zero&#8209;knowledge systems.</span></h1>
         <p class="lead">
-          I build infrastructure that lets people <strong>prove facts about their web data</strong>, such as accounts,
-          history and credentials, without handing that data over. That work spans MPC-TLS and TEE-backed verification,
-          mobile SDKs, Circom circuits and developer tooling.
+          I work where <strong>applied cryptography meets real products</strong>: protocols that let people prove facts about
+          their web data, such as accounts, history and credentials, without handing that data over. That spans MPC-TLS and TEE-backed
+          attestation, zero-knowledge circuits, mobile SDKs and the developer tooling around them.
         </p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#projects">See my work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/kushal-s/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
-          <a class="btn btn-ghost" href="https://t.me/KushalS7788" target="_blank" rel="noopener"><i class="fa-brands fa-telegram" aria-hidden="true"></i> Telegram</a>
+          <a class="btn btn-ghost" href="#contact"><i class="fa-regular fa-comments" aria-hidden="true"></i> Let's talk</a>
+          <a class="btn btn-icon" href="https://www.linkedin.com/in/kushal-s/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+          <a class="btn btn-icon" href="https://t.me/KushalS7788" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
           <a class="btn btn-icon" href="https://github.com/Kushal7788" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
         </div>
         <ul class="hero-meta" aria-label="Highlights">
-          <li><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Burnt Labs · previously Reclaim Protocol</li>
+          <li><i class="fa-solid fa-briefcase" aria-hidden="true"></i> <a href="https://github.com/burnt-labs" target="_blank" rel="noopener">Burnt Labs</a> · previously Reclaim Protocol</li>
           <li><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> M.Tech CS &amp; InfoSec, IIIT Hyderabad</li>
           <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> India</li>
         </ul>
       </div>
       <div class="hero-photo">
         <div class="photo-ring">
-          <img src="assets/img/kushal-shah.jpg" width="560" height="560" alt="Portrait of Kushal Shah">
+          <img src="assets/img/kushal-shah.jpg" width="560" height="560" alt="Kushal Shah, cryptography and research engineer" fetchpriority="high">
         </div>
         <div class="code-chip" aria-hidden="true">
           <span class="c-key">prove</span>(<span class="c-str">"web data"</span>) <span class="c-op">→</span> <span class="c-key">reveal</span>(<span class="c-str">"only what's needed"</span>)
@@ -98,22 +150,28 @@
     <section id="about" class="section container">
       <div class="section-head reveal">
         <p class="kicker">01 · About</p>
-        <h2>Privacy-preserving proofs, from protocol to product</h2>
+        <h2>Cryptography research, shipped as product</h2>
       </div>
       <div class="about-grid">
         <div class="about-copy reveal">
           <p>
-            I'm a software engineer focused on <strong>zkTLS</strong>, the family of techniques (MPC-TLS, proxy
-            witnesses and TEEs) that turns an ordinary HTTPS session into a verifiable proof. Today I build zkTLS
+            I'm a <strong>cryptography and research engineer</strong> focused on <strong>zkTLS</strong>, the family of
+            techniques (MPC-TLS, proxy witnesses and TEEs) that turns an ordinary HTTPS session into a verifiable proof. I read
+            the papers, compare the trust models, and then build the version that holds up in production. Today I build zkTLS
             solutions at <strong>Burnt Labs</strong>. Before that I worked with <strong>Reclaim Protocol</strong>,
             where I built the SDKs and developer tools that cut integration time from hours to minutes.
           </p>
           <p>
-            I like working across the whole stack: protocol research and Rust verifiers, mobile SDKs, and
-            the developer experience that makes all of it usable. My M.Tech at IIIT Hyderabad was in Computer
+            I like working across the whole stack: protocol research and threat models, Rust verifiers,
+            mobile SDKs, and the developer experience that makes all of it usable. My M.Tech at IIIT Hyderabad was in Computer
             Science &amp; Information Security, and I have shipped work in NLP, information retrieval and
             database internals.
           </p>
+          <p class="interests-label">Research interests</p>
+          <ul class="tags interests" aria-label="Research interests">
+            <li>MPC-TLS</li><li>TEE remote attestation</li><li>zkSNARKs &amp; circuits</li><li>Selective disclosure</li>
+            <li>Verifiable credentials</li><li>Privacy-preserving identity</li><li>Threat modelling</li>
+          </ul>
         </div>
         <ul class="stat-grid reveal" aria-label="At a glance">
           <li class="stat"><span class="stat-num">4–5h → 15m</span><span class="stat-label">Reclaim SDK integration time</span></li>
@@ -134,12 +192,12 @@
       <ol class="timeline">
         <li class="t-item reveal">
           <div class="t-meta">
-            <span class="t-date">Present</span>
+            <span class="t-date">Sep 2025 – Present</span>
           </div>
           <article class="t-card">
             <header>
               <h3>Burnt Labs</h3>
-              <p class="t-role">zkTLS solutions</p>
+              <p class="t-role">Cryptography &amp; Research Engineer · zkTLS</p>
             </header>
             <ul>
               <li>Build zkTLS solutions that let users prove facts from web accounts while keeping their raw data private.</li>
@@ -151,7 +209,7 @@
 
         <li class="t-item reveal">
           <div class="t-meta">
-            <span class="t-date">From Jun 2023</span>
+            <span class="t-date">Jun 2023 – Aug 2025</span>
           </div>
           <article class="t-card">
             <header>
@@ -171,7 +229,7 @@
 
         <li class="t-item reveal">
           <div class="t-meta">
-            <span class="t-date">May – Jul 2022</span>
+            <span class="t-date">May 2022 – Jul 2022</span>
           </div>
           <article class="t-card">
             <header>
@@ -187,7 +245,7 @@
 
         <li class="t-item reveal">
           <div class="t-meta">
-            <span class="t-date">Jan – Jun 2021</span>
+            <span class="t-date">Jan 2021 – Jun 2021</span>
           </div>
           <article class="t-card">
             <header>
@@ -204,7 +262,7 @@
 
         <li class="t-item reveal">
           <div class="t-meta">
-            <span class="t-date">Jul – Dec 2020</span>
+            <span class="t-date">Jul 2020 – Dec 2020</span>
           </div>
           <article class="t-card">
             <header>
@@ -411,7 +469,7 @@
           <div>
             <h3>IIIT Hyderabad</h3>
             <p>M.Tech, Computer Science &amp; Information Security</p>
-            <p class="muted">2021 – 2023 · CGPA 8.67</p>
+            <p class="muted">Aug 2021 – Jun 2023 · CGPA 8.67</p>
           </div>
         </article>
         <article class="edu-card reveal">
@@ -419,7 +477,7 @@
           <div>
             <h3>VIIT Pune</h3>
             <p>B.Tech, Computer Engineering</p>
-            <p class="muted">2017 – 2021 · CGPA 9.84</p>
+            <p class="muted">Jun 2017 – Jun 2021 · CGPA 9.84</p>
           </div>
         </article>
       </div>
@@ -430,10 +488,10 @@
       <div class="contact-card reveal">
         <p class="kicker">06 · Contact</p>
         <h2>Let's build something verifiable.</h2>
-        <p class="lead">I'm happy to talk about zero knowledge, zkTLS, privacy engineering, or a role where these matter. The quickest way to reach me is LinkedIn or Telegram.</p>
+        <p class="lead">I'm always glad to hear about hard problems in applied cryptography, zkTLS and privacy engineering, whether that's a research question, a collaboration, or something you're building that could use a cryptography-minded engineer. My messages are open.</p>
         <div class="contact-actions">
           <a class="btn btn-primary" href="https://www.linkedin.com/in/kushal-s/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> Connect on LinkedIn</a>
-          <a class="btn btn-ghost" href="https://t.me/KushalS7788" target="_blank" rel="noopener"><i class="fa-brands fa-telegram" aria-hidden="true"></i> @KushalS7788 on Telegram</a>
+          <a class="btn btn-ghost" href="https://t.me/KushalS7788" target="_blank" rel="noopener"><i class="fa-brands fa-telegram" aria-hidden="true"></i> Message @KushalS7788</a>
           <a class="btn btn-ghost" href="https://github.com/Kushal7788" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
         </div>
       </div>

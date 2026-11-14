@@ -1,6 +1,6 @@
 # kushal7788.github.io
 
-My personal website: a single-page portfolio covering my work on zkTLS and zero-knowledge systems, my experience at Burnt Labs and Reclaim Protocol, and selected open-source projects.
+My personal website: a single-page portfolio for my work as a **cryptography & research engineer** on zkTLS and zero-knowledge systems, my experience at Burnt Labs and Reclaim Protocol, and selected open-source projects.
 
 **Live:** https://kushal7788.github.io · **Connect:** [LinkedIn](https://www.linkedin.com/in/kushal-s/) · [Telegram @KushalS7788](https://t.me/KushalS7788)
 
@@ -16,17 +16,25 @@ My personal website: a single-page portfolio covering my work on zkTLS and zero-
 - **Filterable project grid** (ZK & zkTLS, ML/NLP/IR, Systems), linking to each repository.
 - **Responsive and accessible:** a mobile menu, a skip link, visible focus styles, alt text, keyboard-operable controls, and `prefers-reduced-motion` support.
 - **Lightweight:** no framework and no build step. The files in this repo are exactly what the browser downloads, and the only external requests are Google Fonts and Font Awesome from cdnjs.
-- **Shareable:** Open Graph and Twitter meta tags, a canonical URL and an SVG favicon.
+- **Search and sharing:**
+  - `schema.org` Person, WebSite and ProfilePage JSON-LD, so search engines can tie the site to my GitHub, LinkedIn and Telegram.
+  - Keyword-focused title and description, and `rel="me"` identity links.
+  - `sitemap.xml` and `robots.txt`.
+  - A 1200×630 social card (`assets/img/og-card.png`) for LinkedIn, Telegram and X previews.
+  - A custom `404.html`.
 
 ## Structure
 
 ```text
 .
-├── index.html            # All content and sections
+├── index.html            # All content and sections, plus meta and JSON-LD
+├── 404.html              # Not-found page
+├── robots.txt            # Allows crawling; points to the sitemap
+├── sitemap.xml           # Single-URL sitemap for search engines
 ├── assets/
 │   ├── css/main.css      # Design tokens (dark and light), layout, components, responsive rules
 │   ├── js/main.js        # Theme toggle, mobile menu, scroll reveal, nav highlight, project filters
-│   └── img/              # Portrait, institution logos, favicon
+│   └── img/              # Portrait, social card, institution logos, favicon
 ├── LICENSE
 └── README.md
 ```
